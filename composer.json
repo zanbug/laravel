@@ -1,0 +1,50 @@
+{
+    "name": "zanbug/laravel",
+    "description": "Zanbug SDK — Laravel integration: automatic exception, request, auth & session capture.",
+    "type": "library",
+    "keywords": [
+        "zanbug",
+        "error-monitoring",
+        "laravel",
+        "error-tracking",
+        "monitoring"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zanbug",
+            "email": "dev@zanbug.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "zanbug/php-sdk": "^2.0.0",
+        "illuminate/support": ">=5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zanbug\\Laravel\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zanbug\\Laravel\\ZanbugServiceProvider"
+            ],
+            "aliases": {
+                "Zanbug": "Zanbug\\Sdk\\Zanbug"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "homepage": "https://zanbug.com",
+    "support": {
+        "issues": "https://github.com/zanbug/laravel/issues",
+        "docs": "https://zanbug.com/integrations/laravel",
+        "source": "https://github.com/zanbug/laravel"
+    }
+}
